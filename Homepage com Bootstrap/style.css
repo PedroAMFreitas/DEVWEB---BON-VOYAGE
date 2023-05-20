@@ -1,0 +1,65 @@
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+  }
+  
+  nav {
+    background-color: #f1f1f1;
+    padding: 10px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+  }
+  
+  main {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 100%;
+  }
+  
+  .caption-text {
+    color: white;
+  }
+  
+  .carousel-control {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: auto;
+  }
+  
+  .carousel-control .glyphicon-chevron-left,
+  .carousel-control .glyphicon-chevron-right {
+    color: white;
+  }
+  
+  .carousel-inner .item img {
+    width: 100%;
+    height: auto;
+    max-width: 1024px;
+    max-height: 568px;
+  }
+  
+  .btn-primary {
+    margin-top: 10px;
+  }
+  
