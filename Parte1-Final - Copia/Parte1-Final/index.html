@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>BON VOYAGE</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo-no-background.png" alt="Logo" width="30" height="30">
+    </div>
+    <div class="logobg">
+      <img src="logo-no1.png" alt="header">
+    </div>
+    
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#destaques">Home</a></li>
+      <li><a href="#carouselExample">Pacotes</a></li>
+      <li><a href="#fale-conosco">Fale Conosco</a></li>
+    </ul>
+  </nav>
+
+  <div id="destaques" class="section">
+    <h2>Destaques</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <h3>Principais Destinos</h3>
+        <img src="PrincipaisDestinos.jpg" alt="maindest">
+      </div>
+
+      <div class="col-md-4">
+        <h2>Ofertas</h2>
+        <img src="ofertas.jpg" alt="Pacote de Viagem 1">
+      </div>
+    </div>
+  </div>
+
+
+  <div id="home" class="section home-section">
+    <div class="text-center">
+      <h2>Pacotes</h2>
+    </div>
+
+    <div id="carouselExample" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner pacotes-section">
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="imagem1.jpg" alt="Pacote de Viagem 1">
+              <h4>Nova York</h4>
+              <h5>Aéreo + Hotel</h5>
+              <p>A partir de R$ 10200,00</p>
+            </div>
+            <div class="col-md-4">
+              <img src="imagem2.jpg" alt="Pacote de Viagem 2">
+              <h4>Rio de Janeiro</h4>
+              <h5>Aéreo + Hotel</h5>
+              <p>A partir de R$ 1200,00</p>
+            </div>
+            <div class="col-md-4">
+              <img src="imagem3.jpg" alt="Pacote de Viagem 3">
+              <h4>Paris</h4>
+              <h5>Aéreo + Hotel</h5>
+              <p>A partir de R$ 8000,00</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-md-4">
+              <img src="imagem4.jpg" alt="Pacote de Viagem 4">
+              <h4>Pequim</h4>
+              <h5>Aéreo + Hotel + Passeios</h5>
+              <p>A partir de R$ 15000,00</p>
+            </div>
+            <div class="col-md-4">
+              <img src="imagem5.jpg" alt="Pacote de Viagem 5">
+              <h4>Roma</h4>
+              <h5>All Inclusive</h5>
+              <p>A partir de R$ 20000,00</p>
+            </div>
+            <div class="col-md-4">
+              <img src="imagem6.jpg" alt="Pacote de Viagem 6">
+              <h4>Tóquio</h4>
+              <h5>Aéreo</h5>
+              <p>A partir de R$ 15000,00</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+  </div>
+
+  <div id="noticias" class="section noticias-section">
+    <div class="noticias-wrapper">
+      <div class="noticia active">
+        <h2>Bem-vindo ao Bon Voyage</h2>
+        <p>Se você está em busca da viagem dos seus sonhos, não precisa mais procurar. Aqui, no Bon Voyage, temos o prazer de oferecer pacotes de viagens personalizados que atendem a todos os seus desejos de explorar o mundo.</p>
+        <p>Embarque em uma jornada única, onde cada destino é cuidadosamente selecionado para proporcionar experiências autênticas e memoráveis.</p>
+      </div>
+      <div class="noticia">
+        <h2>Destinos Tropicais</h2>
+        <p>Se você é um amante da praia e do sol, nossos pacotes de viagens para destinos tropicais são a escolha perfeita. Relaxe nas praias paradisíacas, mergulhe nas águas cristalinas e aproveite o clima tropical.</p>
+        <p>De ilhas deslumbrantes no Caribe a resorts luxuosos no Sudeste Asiático, temos opções para todos os gostos.</p>
+      </div>
+      <div class="noticia">
+        <h2>História e Cultura</h2>
+        <p>Para os apaixonados por história e cultura, oferecemos pacotes que mergulham em destinos fascinantes. Explore as ruas estreitas das cidades antigas, visite monumentos icônicos e maravilhe-se com a rica herança cultural de diferentes países.</p>
+        <p>Das ruínas antigas do Egito às cidades históricas da Europa, há uma infinidade de histórias a serem descobertas.</p>
+      </div>
+    </div>
+  
+    <div class="noticias-navigation">
+      <button onclick="changeNoticia(-1)">&#10094;</button>
+      <button onclick="changeNoticia(1)">&#10095;</button>
+    </div>
+  </div>  
+  
+  <script>
+    let noticiaIndex = 0;
+    showNoticia(noticiaIndex);
+  
+    function changeNoticia(n) {
+      showNoticia(noticiaIndex += n);
+    }
+  
+    function showNoticia(n) {
+      const noticias = document.getElementsByClassName("noticia");
+  
+      if (n >= noticias.length) {
+        noticiaIndex = 0;
+      }
+      if (n < 0) {
+        noticiaIndex = noticias.length - 1;
+      }
+  
+      for (let i = 0; i < noticias.length; i++) {
+        noticias[i].classList.remove("active");
+      }
+  
+      noticias[noticiaIndex].classList.add("active");
+    }
+  </script>
+  
+  
+
+  <div id="fale-conosco" class="section fale-conosco-section">
+    <div class="container">
+      <div class="form-box">
+        <h3>Fale Conosco</h3>
+        <form id="contact-form" action="#" method="post">
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+  
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+  
+          <label for="mensagem">Mensagem:</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+  
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+  
+      <div class="info-box">
+        <h3>Informações</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac ultrices lorem, eget interdum leo. Duis posuere nunc sed risus consequat faucibus. Quisque nec ipsum sed nisl condimentum iaculis vel non mi. Donec facilisis mauris eget massa lobortis, ac fermentum odio ullamcorper. Nulla facilisi.</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <script>
+    // Função para validar o formulário
+    function validarFormulario(event) {
+      event.preventDefault(); // Impede o envio do formulário
+
+      // Obter os valores dos campos do formulário
+      var nome = document.getElementById('nome').value;
+      var email = document.getElementById('email').value;
+      var mensagem = document.getElementById('mensagem').value;
+
+      // Validar se os campos estão preenchidos
+      if (nome === '' || email === '' || mensagem === '') {
+        alert('Por favor, preencha todos os campos do formulário.');
+        return;
+      }
+
+      // Validar o formato do email usando uma expressão regular simples
+      var emailRegex = /^\S+@\S+\.\S+$/;
+      if (!emailRegex.test(email)) {
+        alert('Por favor, insira um endereço de email válido.');
+        return;
+      }
+
+      // Se todas as validações passaram, exibir uma mensagem de sucesso
+      alert('Formulário enviado com sucesso!');
+    }
+
+    // Adicionar um ouvinte de evento para o formulário
+    var form = document.getElementById('contact-form');
+    form.addEventListener('submit', validarFormulario);
+  </script>
+
+</body>
+
+</html>

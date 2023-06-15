@@ -1,0 +1,128 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #333;
+  padding: 10px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  margin-right: 10px;
+}
+
+nav {
+  background-color: #666;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.section {
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.destaques-section {
+  background-color: #f0f0f0;
+}
+
+.pacotes-section {
+  background-color: #e0e0e0;
+}
+
+.home-section {
+  background-color: #d0d0d0;
+}
+
+
+.noticias-carousel {
+  overflow: hidden;
+}
+
+.noticias-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.noticia {
+  display: none;
+  text-align: center;
+}
+
+.noticia.active {
+  display: block;
+}
+
+.noticias-navigation {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.noticias-navigation button {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 5px;
+  border: none;
+  background-color: gray;
+}
+
+.noticias-navigation button.active {
+  background-color: black;
+}
+
+
+/* Adicionado código CSS para ajustar o tamanho das imagens */
+.section img {
+  max-width: 100%;
+  height: auto;
+}
+
+form label {
+  display: block;
+  margin-top: 10px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #555;
+}

@@ -1,0 +1,98 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Estilos do cabeçalho */
+header {
+  background-color: #FEB281;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos da navegação */
+nav {
+  background-color: #353643;
+  padding: 10px 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #4EC33D;
+}
+
+/* Estilos das seções */
+.section {
+  padding: 20px;
+  background-color: #fff;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos do formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+}
+
+label {
+  margin-bottom: 5px;
+  color: #353643;
+  font-weight: bold;
+}
+
+input, textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+  border: 1px solid #353643;
+  border-radius: 4px;
+}
+
+button[type="submit"] {
+  padding: 10px;
+  background-color: #FF8F62;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #FEB281;
+}
